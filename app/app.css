@@ -1,0 +1,166 @@
+:root {
+    --bg-color: var(--tg-theme-bg-color, #F7F8FC);
+    --text-color: var(--tg-theme-text-color, #1C1E26);
+    --hint-color: var(--tg-theme-hint-color, #70778A);
+
+    --button-color: var(--tg-theme-button-color, #6A3DFF);
+    --button-text-color: var(--tg-theme-button-text-color, #FFFFFF);
+
+    --secondary-bg-color: var(
+        --tg-theme-secondary-bg-color,
+        #FFFFFF
+    );
+
+    --primary: #6A3DFF;
+    --accent: #FF3D8D;
+    --blue: #33B7FF;
+
+    --card-bg: #FFFFFF;
+    --card-secondary: #F3F4F8;
+    --card-purple: #EDE7FF;
+    --card-blue: #EEF8FF;
+    --card-pink: #FFF0F7;
+
+    --border: #E8EAF2;
+
+    --radius: 18px;
+    --spacing: 16px;
+}
+
+@font-face {
+    font-family: 'Benzin';
+    src: url('fonts/Benzin-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Benzin';
+    src: url('fonts/Benzin-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Benzin';
+    src: url('fonts/Benzin-Semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Benzin';
+    src: url('fonts/Benzin-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Benzin';
+    src: url('fonts/Benzin-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    min-height: 100dvh;
+    font-family: 'Benzin', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    /* Выравниваем мобильный контейнер по центру экрана, если открыли с ПК */
+    display: flex;
+    justify-content: center;
+
+    padding:
+        env(safe-area-inset-top)
+        0
+        env(safe-area-inset-bottom)
+        0;
+}
+
+.desktop-warning {
+    display: none;
+}
+
+.app-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    /* 1. Задаем максимальную ширину как у мобильного телефона */
+    max-width: 480px; 
+    
+    /* 2. Центрируем контейнер */
+    margin: 0 auto; 
+    
+    min-height: 100dvh;
+    padding: 16px;
+}
+
+.app-card {
+    width: 100%;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px;
+    font-size: 15px;
+    line-height: 1.45;
+}
+
+.navigation {
+    background-color: var(--card-bg);
+}
+
+@media screen and (max-width: 359px) {
+
+    .app-content {
+        padding: 12px;
+    }
+
+    .app-card {
+        padding: 14px;
+        border-radius: 16px;
+        font-size: 14px;
+    }
+}
+
+/* На экранах от 768px и шире (компьютеры) показываем заглушку */
+@media screen and (max-width: 768px) {
+    .desktop-warning {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 100dvh;
+        padding: 20px;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        gap: 10px;
+    }
+
+    .desktop-warning .w1 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .desktop-warning .w2 {
+        font-size: 15px;
+        color: var(--hint-color);
+    }
+}

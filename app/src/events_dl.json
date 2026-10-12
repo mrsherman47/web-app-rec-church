@@ -1,0 +1,44 @@
+{
+  "templates": {
+    "sunday": [
+      { "id": "sunday_temp_id1", "path": "regular/sunday/sunday_temp_id1", "isBusy": false },
+      { "id": "sunday_temp_id2", "path": "regular/sunday/sunday_temp_id2", "isBusy": false },
+      { "id": "sunday_temp_id3", "path": "regular/sunday/sunday_temp_id3", "isBusy": false },
+      { "id": "sunday_temp_id4", "path": "regular/sunday/sunday_temp_id4", "isBusy": false },
+      { "id": "sunday_temp_id5", "path": "regular/sunday/sunday_temp_id5", "isBusy": false },
+      { "id": "sunday_temp_id6", "path": "regular/sunday/sunday_temp_id6", "isBusy": false }
+    ],
+    "home_group": [
+      { "id": "home_temp_id1", "path": "regular/home_group/home_temp_id1", "isBusy": false },
+      { "id": "home_temp_id2", "path": "regular/home_group/home_temp_id2", "isBusy": false },
+      { "id": "home_temp_id3", "path": "regular/home_group/home_temp_id3", "isBusy": false },
+      { "id": "home_temp_id4", "path": "regular/home_group/home_temp_id4", "isBusy": false },
+      { "id": "home_temp_id5", "path": "regular/home_group/home_temp_id5", "isBusy": false }
+    ],
+    "prayer": [
+      { "id": "prayer_temp_id1", "path": "regular/prayer/prayer_temp_id1", "isBusy": false },
+      { "id": "prayer_temp_id2", "path": "regular/prayer/prayer_temp_id2", "isBusy": false },
+      { "id": "prayer_temp_id3", "path": "regular/prayer/prayer_temp_id3", "isBusy": false }
+    ],
+    "boys_brunch": [
+      { "id": "boys_temple_id1", "path": "regular/boys_brunch/boys_temple_id1", "isBusy": false },
+      { "id": "boys_temple_id2", "path": "regular/boys_brunch/boys_temple_id2", "isBusy": false },
+      { "id": "boys_temple_id3", "path": "regular/boys_brunch/boys_temple_id3", "isBusy": false }
+    ],
+    "time_code": [
+      { "id": "time_temp_id1", "path": "regular/time_code/time_temp_id1", "isBusy": false },
+      { "id": "time_temp_id2", "path": "regular/time_code/time_temp_id2", "isBusy": false },
+      { "id": "time_temp_id3", "path": "regular/time_code/time_temp_id3", "isBusy": false }
+    ],
+    "easter": [
+      { "id": "easter_temp_id1", "path": "not_regular/easter/easter_temp_id1", "isBusy": false }
+    ],
+    "hb": [
+      { "id": "hb_temp_id1", "path": "not_regular/hb/hb_temp_id1", "isBusy": false }
+    ],
+    "christmas": [
+      { "id": "christmas_temp_id1", "path": "not_regular/christmas/christmas_temp_id1", "isBusy": false }
+    ]
+  },
+  "events": []
+}
