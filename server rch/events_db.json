@@ -1,0 +1,22 @@
+{
+  "week": [
+    {
+      "id": "1789058466225",
+      "title": "Воскресное собрание",
+      "date": "2026-09-13",
+      "time": "11:00",
+      "location": "Главный зал",
+      "link": "https://t.me/church_channel"
+    }
+  ],
+  "month": [
+    {
+      "id": "1789058466226",
+      "title": "Ночь хвалы",
+      "date": "2026-09-25",
+      "time": "19:00",
+      "location": "Малый зал",
+      "link": "https://t.me/church_channel"
+    }
+  ]
+}
